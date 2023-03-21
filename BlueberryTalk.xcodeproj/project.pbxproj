@@ -1,0 +1,500 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A506E83D29CA55EC004873DA /* BlueberryKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A506E83C29CA55EC004873DA /* BlueberryKit.framework */; };
+		A506E83E29CA55EC004873DA /* BlueberryKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A506E83C29CA55EC004873DA /* BlueberryKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A5E5893229BE0A6D00C38E2A /* BlueberryTalkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E5893129BE0A6D00C38E2A /* BlueberryTalkApp.swift */; };
+		A5E5893429BE0A6D00C38E2A /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E5893329BE0A6D00C38E2A /* ChatView.swift */; };
+		A5E5893629BE0A6E00C38E2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5E5893529BE0A6E00C38E2A /* Assets.xcassets */; };
+		A5E5893929BE0A6E00C38E2A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5E5893829BE0A6E00C38E2A /* Preview Assets.xcassets */; };
+		A5E5894929BE0D7300C38E2A /* MessageBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E5894829BE0D7300C38E2A /* MessageBubble.swift */; };
+		A5E5894B29BE102E00C38E2A /* ScanItemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E5894A29BE102E00C38E2A /* ScanItemRow.swift */; };
+		A5E5894F29BE15A000C38E2A /* MessageField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E5894E29BE15A000C38E2A /* MessageField.swift */; };
+		A5E5895329BE183200C38E2A /* ScanItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E5895229BE183200C38E2A /* ScanItem.swift */; };
+		A5E5895529BE192A00C38E2A /* ScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E5895429BE192A00C38E2A /* ScanView.swift */; };
+		A5E5895929BE233E00C38E2A /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E5895829BE233E00C38E2A /* LoginView.swift */; };
+		A5E5896329C624A100C38E2A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E5896229C624A100C38E2A /* ContentView.swift */; };
+		A5E5896729CA32AB00C38E2A /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E5896629CA32AB00C38E2A /* String+Extension.swift */; };
+		A5E5896929CA340900C38E2A /* EmojiPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E5896829CA340900C38E2A /* EmojiPicker.swift */; };
+		BF645ACF29C7E08100100795 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF645ACE29C7E08100100795 /* SplashView.swift */; };
+		BF645AD329C7E3BF00100795 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF645AD229C7E3BF00100795 /* Color+Extension.swift */; };
+		BF645AD829C7FCCB00100795 /* BasicTextFieldStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF645AD729C7FCCB00100795 /* BasicTextFieldStyle.swift */; };
+		BF645ADD29C8204000100795 /* View+HideKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF645ADC29C8204000100795 /* View+HideKeyboard.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A506E83F29CA55EC004873DA /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A506E83E29CA55EC004873DA /* BlueberryKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A506E83C29CA55EC004873DA /* BlueberryKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = BlueberryKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5E5892E29BE0A6D00C38E2A /* BlueberryTalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlueberryTalk.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5E5893129BE0A6D00C38E2A /* BlueberryTalkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueberryTalkApp.swift; sourceTree = "<group>"; };
+		A5E5893329BE0A6D00C38E2A /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		A5E5893529BE0A6E00C38E2A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A5E5893829BE0A6E00C38E2A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A5E5894829BE0D7300C38E2A /* MessageBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageBubble.swift; sourceTree = "<group>"; };
+		A5E5894A29BE102E00C38E2A /* ScanItemRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanItemRow.swift; sourceTree = "<group>"; };
+		A5E5894E29BE15A000C38E2A /* MessageField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageField.swift; sourceTree = "<group>"; };
+		A5E5895229BE183200C38E2A /* ScanItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanItem.swift; sourceTree = "<group>"; };
+		A5E5895429BE192A00C38E2A /* ScanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanView.swift; sourceTree = "<group>"; };
+		A5E5895829BE233E00C38E2A /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		A5E5896129BE383000C38E2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		A5E5896229C624A100C38E2A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A5E5896629CA32AB00C38E2A /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		A5E5896829CA340900C38E2A /* EmojiPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiPicker.swift; sourceTree = "<group>"; };
+		BF645ACE29C7E08100100795 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		BF645AD229C7E3BF00100795 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
+		BF645AD729C7FCCB00100795 /* BasicTextFieldStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicTextFieldStyle.swift; sourceTree = "<group>"; };
+		BF645ADC29C8204000100795 /* View+HideKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+HideKeyboard.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A5E5892B29BE0A6D00C38E2A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A506E83D29CA55EC004873DA /* BlueberryKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A506E83B29CA55EC004873DA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A506E83C29CA55EC004873DA /* BlueberryKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A5E5892529BE0A6D00C38E2A = {
+			isa = PBXGroup;
+			children = (
+				A5E5893029BE0A6D00C38E2A /* BlueberryTalk */,
+				A5E5892F29BE0A6D00C38E2A /* Products */,
+				A506E83B29CA55EC004873DA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A5E5892F29BE0A6D00C38E2A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A5E5892E29BE0A6D00C38E2A /* BlueberryTalk.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A5E5893029BE0A6D00C38E2A /* BlueberryTalk */ = {
+			isa = PBXGroup;
+			children = (
+				A5E5895729BE22CB00C38E2A /* Navigation */,
+				A5E5895629BE229500C38E2A /* Views */,
+				A5E5894029BE0B9C00C38E2A /* Models */,
+				BF645ADB29C8201B00100795 /* Utils */,
+				A5E5893529BE0A6E00C38E2A /* Assets.xcassets */,
+				A5E5896129BE383000C38E2A /* Info.plist */,
+				A5E5893729BE0A6E00C38E2A /* Preview Content */,
+			);
+			path = BlueberryTalk;
+			sourceTree = "<group>";
+		};
+		A5E5893729BE0A6E00C38E2A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				A5E5893829BE0A6E00C38E2A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A5E5893F29BE0B5300C38E2A /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				A5E5894829BE0D7300C38E2A /* MessageBubble.swift */,
+				A5E5894E29BE15A000C38E2A /* MessageField.swift */,
+				A5E5894A29BE102E00C38E2A /* ScanItemRow.swift */,
+				A5E5896829CA340900C38E2A /* EmojiPicker.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		A5E5894029BE0B9C00C38E2A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A5E5895229BE183200C38E2A /* ScanItem.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A5E5895629BE229500C38E2A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BF645AD629C7FCBD00100795 /* Style */,
+				BF645AD129C7E3AD00100795 /* Design */,
+				A5E5893F29BE0B5300C38E2A /* Components */,
+				A5E5896229C624A100C38E2A /* ContentView.swift */,
+				BF645ACE29C7E08100100795 /* SplashView.swift */,
+				A5E5895829BE233E00C38E2A /* LoginView.swift */,
+				A5E5895429BE192A00C38E2A /* ScanView.swift */,
+				A5E5893329BE0A6D00C38E2A /* ChatView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A5E5895729BE22CB00C38E2A /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				A5E5893129BE0A6D00C38E2A /* BlueberryTalkApp.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		BF645AD129C7E3AD00100795 /* Design */ = {
+			isa = PBXGroup;
+			children = (
+				BF645AD229C7E3BF00100795 /* Color+Extension.swift */,
+			);
+			path = Design;
+			sourceTree = "<group>";
+		};
+		BF645AD629C7FCBD00100795 /* Style */ = {
+			isa = PBXGroup;
+			children = (
+				BF645AD729C7FCCB00100795 /* BasicTextFieldStyle.swift */,
+			);
+			path = Style;
+			sourceTree = "<group>";
+		};
+		BF645ADB29C8201B00100795 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				BF645ADC29C8204000100795 /* View+HideKeyboard.swift */,
+				A5E5896629CA32AB00C38E2A /* String+Extension.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A5E5892D29BE0A6D00C38E2A /* BlueberryTalk */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5E5893C29BE0A6E00C38E2A /* Build configuration list for PBXNativeTarget "BlueberryTalk" */;
+			buildPhases = (
+				A5E5892A29BE0A6D00C38E2A /* Sources */,
+				A5E5892B29BE0A6D00C38E2A /* Frameworks */,
+				A5E5892C29BE0A6D00C38E2A /* Resources */,
+				A506E83F29CA55EC004873DA /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BlueberryTalk;
+			productName = BlueberryTalk;
+			productReference = A5E5892E29BE0A6D00C38E2A /* BlueberryTalk.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A5E5892629BE0A6D00C38E2A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					A5E5892D29BE0A6D00C38E2A = {
+						CreatedOnToolsVersion = 14.1;
+					};
+				};
+			};
+			buildConfigurationList = A5E5892929BE0A6D00C38E2A /* Build configuration list for PBXProject "BlueberryTalk" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A5E5892529BE0A6D00C38E2A;
+			productRefGroup = A5E5892F29BE0A6D00C38E2A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A5E5892D29BE0A6D00C38E2A /* BlueberryTalk */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A5E5892C29BE0A6D00C38E2A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5E5893929BE0A6E00C38E2A /* Preview Assets.xcassets in Resources */,
+				A5E5893629BE0A6E00C38E2A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A5E5892A29BE0A6D00C38E2A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5E5893429BE0A6D00C38E2A /* ChatView.swift in Sources */,
+				BF645ACF29C7E08100100795 /* SplashView.swift in Sources */,
+				A5E5896329C624A100C38E2A /* ContentView.swift in Sources */,
+				BF645ADD29C8204000100795 /* View+HideKeyboard.swift in Sources */,
+				A5E5894929BE0D7300C38E2A /* MessageBubble.swift in Sources */,
+				A5E5896729CA32AB00C38E2A /* String+Extension.swift in Sources */,
+				A5E5894F29BE15A000C38E2A /* MessageField.swift in Sources */,
+				BF645AD829C7FCCB00100795 /* BasicTextFieldStyle.swift in Sources */,
+				BF645AD329C7E3BF00100795 /* Color+Extension.swift in Sources */,
+				A5E5894B29BE102E00C38E2A /* ScanItemRow.swift in Sources */,
+				A5E5896929CA340900C38E2A /* EmojiPicker.swift in Sources */,
+				A5E5895529BE192A00C38E2A /* ScanView.swift in Sources */,
+				A5E5895329BE183200C38E2A /* ScanItem.swift in Sources */,
+				A5E5895929BE233E00C38E2A /* LoginView.swift in Sources */,
+				A5E5893229BE0A6D00C38E2A /* BlueberryTalkApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A5E5893A29BE0A6E00C38E2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A5E5893B29BE0A6E00C38E2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A5E5893D29BE0A6E00C38E2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = primaryBlue;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BlueberryTalk/Preview Content\"";
+				DEVELOPMENT_TEAM = 7555R8ZYJ2;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BlueberryTalk/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "블루베리톡";
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "채팅 기능을 위해 블루투스 권한이 필요합니당";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.lucasheo.BlueberryTalk;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A5E5893E29BE0A6E00C38E2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = primaryBlue;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BlueberryTalk/Preview Content\"";
+				DEVELOPMENT_TEAM = 7555R8ZYJ2;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BlueberryTalk/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "블루베리톡";
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "채팅 기능을 위해 블루투스 권한이 필요합니당";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.lucasheo.BlueberryTalk;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A5E5892929BE0A6D00C38E2A /* Build configuration list for PBXProject "BlueberryTalk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5E5893A29BE0A6E00C38E2A /* Debug */,
+				A5E5893B29BE0A6E00C38E2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5E5893C29BE0A6E00C38E2A /* Build configuration list for PBXNativeTarget "BlueberryTalk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5E5893D29BE0A6E00C38E2A /* Debug */,
+				A5E5893E29BE0A6E00C38E2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A5E5892629BE0A6D00C38E2A /* Project object */;
+}
