@@ -12,6 +12,16 @@ struct MessageField: View {
     @EnvironmentObject var bleChatService: BlueberryChatService
     @State private var message = ""
     
+    var isValid: Bool {
+        return message.hasNonEmptyValue
+    }
+    var buttonForegroundColor: Color {
+        isValid ? Color.textWhite : Color.textDescription
+    }
+    var buttonBackgroundColor: Color {
+        isValid ? Color.primaryBlue : Color.backgroundField
+    }
+    
     var body: some View {
         HStack {
             CustomTextField(
@@ -24,11 +34,12 @@ struct MessageField: View {
                 message = ""
             } label: {
                 Image(systemName: "paperplane.fill")
-                    .foregroundColor(.textWhite)
                     .padding(10)
-                    .background(Color.primaryBlue)
+                    .foregroundColor(buttonForegroundColor)
+                    .background(buttonBackgroundColor)
                     .cornerRadius(50)
             }
+            .disabled(!isValid)
         }
         .padding(.horizontal)
         .padding(.vertical, 10)
