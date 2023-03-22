@@ -14,7 +14,6 @@ public class BlueberryChatService: NSObject, ObservableObject {
     
     @Published public var messages: [Message] = []
     @Published public var isPeripheralConnected: Bool = false
-//    @Published var peripheralUserInfo: UserInfo?
     var connectedPeripheral: CBPeripheral?
     var messageCharacteristic: CBCharacteristic?
     
@@ -63,22 +62,21 @@ extension BlueberryChatService: CBCentralManagerDelegate {
         }
     }
     
-    func connect(uuid: UUID) {
+    public func connect(peripheral: CBPeripheral) {
+        centralManager.connect(peripheral, options: nil)
+    }
+    
+    /**
+     uuid를 통해 연결할 때 사용하는 메소드
+     */
+    private func connect(uuid: UUID) {
         guard let p = centralManager.retrievePeripherals(withIdentifiers: [uuid]).first
         else {
-//            //TODO: BluetoothManagerError???? 다음에 잘 나눠보자
-//            let error = BluetoothManagerError.cannotFindPeripheral
-//            log.error(tag: .ble, error.localizedDescription)
-//            deviceDelegate?.deviceDidFailToConnect(error)
-//            self.updateConnectState(.disconnected)
+            // 연결 실패
             return
         }
         
         centralManager.connect(p, options: nil)
-    }
-    
-    public func connect(peripheral: CBPeripheral) {
-        centralManager.connect(peripheral, options: nil)
     }
     
     public func disconnect() {
@@ -108,7 +106,7 @@ extension BlueberryChatService: CBCentralManagerDelegate {
         print("⭐️ advertisementData: \(advertisementData.description)")
         
         guard let localName = advertisementData[CBAdvertisementDataLocalNameKey] as? String else { return }
-        var duplicatedPeripheral = self.discoveredPeripheral.first(where: { $0.peripheral.identifier == peripheral.identifier })
+        let duplicatedPeripheral = self.discoveredPeripheral.first(where: { $0.peripheral.identifier == peripheral.identifier })
         if duplicatedPeripheral == nil {
             let model = PeripheralScanInfo(
                 peripheral: peripheral,
@@ -169,13 +167,6 @@ extension BlueberryChatService: CBPeripheralDelegate {
             $0.uuid.isEqual(ChatBleSpec.rxUUID)
         }) {
             self.messageCharacteristic = characteristic
-//            if let messageText = messageTextField.text {
-//                let data = messageText.data(using: .utf8)
-//                peripheral.writeValue(data!, for: characteristic, type: CBCharacteristicWriteType.withResponse)
-//                appendMessageToChat(message: Message(text: messageText, isSent: true))
-//                messageTextField.text = ""
-//
-//            }
         }
     }
     
