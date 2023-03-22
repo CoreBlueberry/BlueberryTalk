@@ -10,22 +10,32 @@ import CoreBluetooth
 /**
  Peripheral 모델
  */
-public struct PeripheralScanInfo: Identifiable {
+public class PeripheralScanInfo: Identifiable {
     public let id: UUID
     public let peripheral: CBPeripheral
-    public let localName: String
-    public let advertisementData: [String: Any]
-    public let rssi: Int
+    private(set) var localName: String
+    private(set) var advertisementData: [String: Any]
+    public private(set) var rssi: Int
     
     init(
         peripheral: CBPeripheral,
-        name: String,
+        localName: String,
         advertisenemtData: [String: Any],
         rssi: NSNumber
     ) {
         self.id = UUID()
         self.peripheral = peripheral
-        self.localName = name
+        self.localName = localName
+        self.advertisementData = advertisenemtData
+        self.rssi = rssi.intValue
+    }
+    
+    func update(
+        localName: String,
+        advertisenemtData: [String: Any],
+        rssi: NSNumber
+    ) {
+        self.localName = localName
         self.advertisementData = advertisenemtData
         self.rssi = rssi.intValue
     }

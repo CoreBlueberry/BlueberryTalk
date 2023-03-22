@@ -107,17 +107,24 @@ extension BlueberryChatService: CBCentralManagerDelegate {
         print("⭐️ didDiscover: \(peripheral.description)")
         print("⭐️ advertisementData: \(advertisementData.description)")
         
-        let duplicatedPeripheral =  self.discoveredPeripheral.map { return $0.peripheral }.first(where: { $0.identifier == peripheral.identifier })
-        guard duplicatedPeripheral == nil else { return }
-        guard let name = advertisementData[CBAdvertisementDataLocalNameKey] as? String else { return }
-        
-        let model = PeripheralScanInfo(
-            peripheral: peripheral,
-            name: name,
-            advertisenemtData: advertisementData,
-            rssi: RSSI
-        )
-        discoveredPeripheral.append(model)
+        guard let localName = advertisementData[CBAdvertisementDataLocalNameKey] as? String else { return }
+        var duplicatedPeripheral = self.discoveredPeripheral.first(where: { $0.peripheral.identifier == peripheral.identifier })
+        if duplicatedPeripheral == nil {
+            let model = PeripheralScanInfo(
+                peripheral: peripheral,
+                localName: localName,
+                advertisenemtData: advertisementData,
+                rssi: RSSI
+            )
+            self.discoveredPeripheral.append(model)
+        } else {
+            duplicatedPeripheral!.update(
+                localName: localName,
+                advertisenemtData: advertisementData,
+                rssi: RSSI
+            )
+        }
+
         discoveredPeripheral.sort { $0.rssi > $1.rssi }
     }
     
