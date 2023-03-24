@@ -4,6 +4,8 @@
 <dict>
 	<key>NSBluetoothAlwaysUsageDescription</key>
 	<string>채팅 기능을 위해 블루투스 연결 권한이 필요합니다!</string>
+	<key>NSBluetoothPeripheralUsageDescription</key>
+	<string>채팅 기능을 위해 블루투스 연결 권한이 필요합니다!</string>
 	<key>ITSAppUsesNonExemptEncryption</key>
 	<false/>
 	<key>UIBackgroundModes</key>
