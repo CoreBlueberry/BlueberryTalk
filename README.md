@@ -9,4 +9,4 @@
 
 ## Environment
 - Xcode: 14.1
-- Minimum Target: iOS 15.0
+- Minimum Target: iOS 15.0+
