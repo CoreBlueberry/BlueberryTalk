@@ -20,5 +20,13 @@ public struct UserInfo {
      설명
      */
     public let description: String
+    
+    public init(
+        name: String,
+        description: String
+    ) {
+        self.name = name
+        self.description = description
+    }
 }
 
